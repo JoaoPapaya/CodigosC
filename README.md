@@ -188,3 +188,49 @@ printf("Digite seu nome\n");
     
         return 0;
 }
+```
+## Questão 44
+```
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void maior (float principal, float f2, float f3){
+    if((principal > f2) && (principal > f3)){
+        printf("%.2f é o maior\n", principal);
+    }
+}
+void menor (float principal, float f2, float f3){
+    if((principal < f2) && (principal < f3)){
+        printf("%2.f é o menor\n", principal);
+    }
+}
+void meio (float principal, float f2, float f3){
+    if((principal < f2) && (principal > f3) || (principal > f2) && (principal < f3)){
+        printf("%.2f é o do meio\n", principal);
+    }
+}
+
+int main() {
+    
+    float f, f2, f3;
+    
+    printf("digite o 1º valor: ");
+    scanf("%f", &f);
+    printf("digite o 2º valor: ");
+    scanf("%f", &f2);
+    printf("digite o 3º valor: ");
+    scanf("%f", &f3);
+    
+    maior(f, f2, f3);
+    maior(f2, f, f3);
+    maior(f3, f2, f);    
+    meio(f, f2, f3);    
+    meio(f2, f, f3);    
+    meio(f3, f2, f);    
+    menor(f, f2, f3);
+    menor(f2, f, f3);
+    menor(f3, f2, f);    
+    
+    return 0;
+}
+```
