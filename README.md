@@ -234,3 +234,34 @@ int main() {
     return 0;
 }
 ```
+## Questão 45
+```
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float f, f2;
+    char op;
+    printf("Digite o primeiro número: ");
+    scanf("%f", f);
+    printf("Digite a operação (+ - * ou /): ");
+    scanf("%c", op);
+    printf("Digite o segundo número: ");
+    scanf("%f", f2);
+    
+    if(op == "+"){
+        printf("O resultado é: %f", f + f2);
+    }
+    if(op == "-"){
+        printf("O resultado é: %f", f - f2);
+    }
+    if(op == "*"){
+        printf("O resultado é: %f", f * f2);
+    }
+    if(op == "/"){
+        printf("O resultado é: %f", f / f2);
+    }
+    
+    return 0;
+}
+```
