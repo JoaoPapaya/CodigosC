@@ -265,3 +265,29 @@ int main() {
     return 0;
 }
 ```
+
+## Questão 52
+
+```
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    float nota;
+    float soma = 0;
+    int i = 0;
+    float media = 0;
+    
+    while(nota >= 0){
+        printf("digite uma nota: ");
+        scanf("%f", &nota);
+        if(nota >= 0){
+            soma += nota;
+            i++;
+        }
+    }
+    printf("A média foi: %.2f", soma/i);
+    
+    return 0;
+}
+```
